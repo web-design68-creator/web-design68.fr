@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Designer 68 | Accueil</title>
+  <meta name="description" content="Web Designer 68 - Freelance en création de sites vitrines modernes, rapides et SEO." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__wrap">
+    <a href="index.html" class="logo">
+      <span class="logo__mark">WD</span>
+      <span class="logo__text">Web Designer 68</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" data-page="index.html">Accueil</a>
+      <a href="a-propos.html" data-page="a-propos.html">À propos</a>
+      <a href="services.html" data-page="services.html">Services</a>
+      <a href="contact.html" class="btn btn--small" data-page="contact.html">Devis</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <p class="badge">Freelance • Création de sites web</p>
+      <h1>Je crée des sites vitrines modernes qui donnent envie de te contacter.</h1>
+      <p class="subtitle">
+        Un design professionnel, responsive, rapide et optimisé SEO.
+        Objectif : transformer tes visiteurs en clients.
+      </p>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="contact.html">Demander un devis</a>
+        <a class="btn btn--ghost" href="portfolio.html">Voir mes projets</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Inclus</h3>
+      <ul class="checklist">
+        <li>Design sur-mesure</li>
+        <li>Mobile / tablette</li>
+        <li>Formulaire contact</li>
+        <li>SEO technique (base)</li>
+        <li>Performance optimisée</li>
+      </ul>
+      <div style="margin-top:14px;">
+        <a class="btn btn--small" href="services.html">Voir les services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <h2>Pourquoi travailler avec moi ?</h2>
+      <p>Un site simple, beau et pensé pour générer des demandes.</p>
+    </div>
+
+    <div class="grid grid--3">
+      <div class="box">
+        <h3>Design premium</h3>
+        <p>Un rendu moderne qui inspire confiance dès la première visite.</p>
+      </div>
+      <div class="box">
+        <h3>Rapidité</h3>
+        <p>Un site fluide, optimisé, et agréable à naviguer.</p>
+      </div>
+      <div class="box">
+        <h3>Conversion</h3>
+        <p>Structure claire, CTA visibles, et formulaire fonctionnel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2>Navigation</h2>
+      <p>Découvre les pages principales du site.</p>
+    </div>
+
+    <div class="grid grid--3">
+      <a class="box" href="a-propos.html">
+        <h3>À propos</h3>
+        <p>Présentation et approche.</p>
+      </a>
+      <a class="box" href="services.html">
+        <h3>Services</h3>
+        <p>Offres et prestations.</p>
+      </a>
+      <a class="box" href="contact.html">
+        <h3>Contact</h3>
+        <p>Demande de devis rapide.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__row">
+    <p>© <span id="year"></span> Web Designer 68 — Tous droits réservés.</p>
+    <div class="footer__links">
+      <a href="contact.html">Contact</a>
+      <a href="index.html">Accueil</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

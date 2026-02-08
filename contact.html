@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Designer 68 | Contact</title>
+  <meta name="description" content="Contact Web Designer 68 - demande de devis pour un site vitrine moderne." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__wrap">
+    <a href="index.html" class="logo">
+      <span class="logo__mark">WD</span>
+      <span class="logo__text">Web Designer 68</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" data-page="index.html">Accueil</a>
+      <a href="a-propos.html" data-page="a-propos.html">À propos</a>
+      <a href="services.html" data-page="services.html">Services</a>
+      <a href="contact.html" class="btn btn--small" data-page="contact.html">Devis</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <p class="badge">Contact</p>
+    <h1>Demande de devis</h1>
+    <p class="subtitle">
+      Ton message est envoyé automatiquement. Le client ne quitte pas le site.
+    </p>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container contact__grid">
+
+    <div>
+      <div class="section__head">
+        <h2>Coordonnées</h2>
+        <p>Tu peux aussi me joindre directement.</p>
+      </div>
+
+      <div class="info">
+        <span class="info__label">Email</span>
+        <span>contact@webdesigner68.fr</span>
+      </div>
+
+      <div class="info" style="margin-top:10px;">
+        <span class="info__label">Téléphone</span>
+        <span>+33 6 00 00 00 00</span>
+      </div>
+
+      <div class="info" style="margin-top:10px;">
+        <span class="info__label">Zone</span>
+        <span>Alsace & à distance</span>
+      </div>
+    </div>
+
+    <form class="form" id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" placeholder="Ton nom" required />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="ton@email.com" required />
+      </div>
+
+      <div class="field">
+        <label for="phone">Téléphone (optionnel)</label>
+        <input id="phone" name="phone" type="tel" placeholder="06 XX XX XX XX" />
+      </div>
+
+      <div class="field">
+        <label for="project">Type de projet</label>
+        <select id="project" name="project" required>
+          <option value="">Choisir…</option>
+          <option value="Site vitrine">Site vitrine</option>
+          <option value="Landing page">Landing page</option>
+          <option value="Refonte">Refonte</option>
+          <option value="Autre">Autre</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Décris ton besoin…" required></textarea>
+      </div>
+
+      <!-- Anti-bot (ne pas supprimer) -->
+      <input type="text" name="website" id="website" style="display:none" tabindex="-1" autocomplete="off">
+
+      <button class="btn" type="submit" id="submitBtn">Envoyer</button>
+      <p class="form__note" id="formNote" aria-live="polite"></p>
+    </form>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__row">
+    <p>© <span id="year"></span> Web Designer 68 — Tous droits réservés.</p>
+    <div class="footer__links">
+      <a href="contact.html">Contact</a>
+      <a href="index.html">Accueil</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
